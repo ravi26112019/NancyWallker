@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    /* Soft warm orange/peach vertical gradient */
+    background: linear-gradient(180deg, #ddb9a6 0%, #fef3e2 100%);
+    padding: 2rem 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 24rem;
+    /* ~384px width for sleek look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Top Bar for Share Button (No absolute position) */
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.75rem;
+}
+
+/* Curved Arrow Share Button */
+.share-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #ffffff83;
+    border: none;
+    color: #222222;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.share-btn:hover {
+    transform: scale(1.08);
+    background-color: #ffffffc2;
+}
+
+/* Profile Picture */
+.profile-img-wrapper {
+    aspect-ratio: 1;
+    width: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Typography */
+.name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 0.35rem;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #3a3a3a;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 0.85rem;
+    color: #333333c9;
+    font-weight: 500;
+    max-width: 16rem;
+    line-height: 1.45;
+    margin-bottom: 1.25rem;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.social-icons i {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+}
+
+.social-icons a {
+    color: #1a1a1a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.15);
+}
+
+/* Main Buttons */
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-btn {
+    display: block;
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    background-color: #5b3b2a;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.link-btn:hover {
+    background-color: #7e533c;
+    transform: translateY(-2px);
+}
